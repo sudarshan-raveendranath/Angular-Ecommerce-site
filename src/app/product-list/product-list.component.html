@@ -1,0 +1,9 @@
+<img [src]="product.pImage">
+<p>Name: {{ product.name }}</p>
+<p>Price: {{ '$' + product.price}}</p>
+<p>Color: {{product.color}}</p>
+<p>Discounted Price: {{getDiscountedPrice().toFixed(2)}}</p>
+<P>{{product.inStock > 0 ? 'Only ' + product.inStock + ' items left': 'Not in Stock'}}</P>
+<button [disabled]="!(product.inStock > 0) ">Buy Now</button>
+<!--disabled,hidden,checked---these properties will not work with string interpollation. they needs property binding-->
+<input [value]="name" [attr.aria-hidden]="">
