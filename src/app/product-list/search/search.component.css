@@ -1,0 +1,27 @@
+.ecommerce-search-product{
+    margin: 20px auto;
+    text-align: center;
+}
+.ecommerce-search-product-input {
+    width: 40%;
+    height: 5.5vh;
+    padding: 1px 10px;
+    outline: none;
+    border-radius: 2px;
+    background-color: #efefef;
+    border: #28282b 1px solid;
+}
+.btn {
+    padding: 5px 10px;
+    border: none;
+}
+.btn-search{
+    padding: 12px 30px;
+    background-color: #28282b;
+    margin-left: -5px;
+    color: #fff;
+}
+.ecommerce-search-result-for{
+    margin: 20px auto;
+    padding: 10px 140px;
+}
