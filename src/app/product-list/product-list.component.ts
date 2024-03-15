@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
-  name="John Doe";
+  /*name="John Doe";
   addToCart:number = 0;
   product = {
     name: 'Phone X',
@@ -33,6 +33,7 @@ export class ProductListComponent {
     if(this.addToCart < this.product.inStock) {
       this.addToCart++;
     }
-  }
+  }*/
+  listOfString: string[] = ['Mark','Steve','Merry','John','Sarah'];
 
 }
