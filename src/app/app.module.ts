@@ -9,7 +9,8 @@ import { TopMenuComponent } from './header/top-menu/top-menu.component';
 import { MainMenuComponent } from './header/main-menu/main-menu.component';
 import { ContainerComponent } from './container/container.component';
 import { SearchComponent } from './container/search/search.component';
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { FormsModule } from '@angular/forms';
+import { ProductListComponent } from './container/product-list/product-list.component'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
     TopMenuComponent,
     MainMenuComponent,
     ContainerComponent,
-    SearchComponent
+    SearchComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
