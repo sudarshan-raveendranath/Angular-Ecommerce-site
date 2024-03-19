@@ -1,10 +1,10 @@
 <div class="ecommerce-products-container">
-<div class="ecommerce-product-item" *ngFor="let prod of products; let i = index">
+<!-- <div class="ecommerce-product-item" *ngFor="let prod of products; let i = index">
     <div class="ecommerce-wishlist-sale-container">
         <div class="ecommerce-add-to-wishlist">
           <i class="fa fa-heart-o" aria-hidden="true"></i>
           <!-- <i>{{i}}</i> -->
-        </div>
+        <!-- </div>
         <div class="ecommerce-on-sale-tag" *ngIf="prod.discountPrice">{{(100- (prod.discountPrice / prod.price * 100)).toFixed(0)}}% OFF</div>
       </div>
       <div class="ecommerce-product-image">
@@ -19,5 +19,6 @@
       <div class="ecommerce-product-in-stock" [ngStyle]="{fontWeight: 'bold',color:prod.is_in_inventory ? 'Green' : 'Red'}">
         {{prod.is_in_inventory ? 'Available in stock' : 'Not available in stock'}}
       </div>
-    </div>
+    </div> -->
+    <app-product *ngFor="let prod of products"[product]="prod"></app-product>
 </div>
