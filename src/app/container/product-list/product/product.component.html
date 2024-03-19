@@ -1,0 +1,21 @@
+<div class="ecommerce-product-item">
+    <div class="ecommerce-wishlist-sale-container">
+        <div class="ecommerce-add-to-wishlist">
+          <i class="fa fa-heart-o" aria-hidden="true"></i>
+          <!-- <i>{{i}}</i> -->
+        </div>
+        <div class="ecommerce-on-sale-tag" *ngIf="product.discountPrice">{{(100- (product.discountPrice / product.price * 100)).toFixed(0)}}% OFF</div>
+      </div>
+      <div class="ecommerce-product-image">
+          <img [src]="product.imageURL" class="ecommerce-product-image">
+      </div>
+      <div class="ecommerce-add-to-price">
+          {{product.price}}
+      </div>
+      <div class="ecommerce-product-name">{{product.name}}</div>
+      <div class="ecommerce-product-category">{{product.gender}} . {{product.category}} . {{product.brand}}</div>
+      <div class="ecommerce-product-available-colors">{{product.color.length}} Colors . Best Seller</div>
+      <div class="ecommerce-product-in-stock" [ngStyle]="{fontWeight: 'bold',color:product.is_in_inventory ? 'Green' : 'Red'}">
+        {{product.is_in_inventory ? 'Available in stock' : 'Not available in stock'}}
+      </div>
+    </div>
