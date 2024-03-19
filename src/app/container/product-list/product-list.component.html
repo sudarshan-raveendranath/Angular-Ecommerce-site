@@ -5,7 +5,7 @@
           <i class="fa fa-heart-o" aria-hidden="true"></i>
           <!-- <i>{{i}}</i> -->
         </div>
-        <!-- <div class="ecommerce-on-sale-tag">75% OFF</div> -->
+        <div class="ecommerce-on-sale-tag" *ngIf="prod.discountPrice">{{(100- (prod.discountPrice / prod.price * 100)).toFixed(0)}}% OFF</div>
       </div>
       <div class="ecommerce-product-image">
           <img [src]="prod.imageURL" class="ecommerce-product-image">
