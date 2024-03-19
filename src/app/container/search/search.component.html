@@ -3,5 +3,5 @@
     <!--<input class="ecommerce-search-product-input" [value]="searchText" (input)="updateSearchText($event)">-->
     <button class="btn btn-search">Search</button>
 </div>
-<div class="ecommerce-search-result-for"><p><strong>Search result for:</strong> {{searchText}}</p></div>
+<div class="ecommerce-search-result-for"><p *ngIf="searchText != ''"><strong>Search result for:</strong> {{searchText}}</p></div>
 
