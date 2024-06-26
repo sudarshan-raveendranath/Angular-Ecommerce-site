@@ -1,5 +1,5 @@
 <div class="ecommerce-search-product">
-    <input class="ecommerce-search-product-input" [(ngModel)]="searchText">
+    <input class="ecommerce-search-product-input" [(ngModel)]="searchText" (input)="onSearchTextChanged()">
     <!--<input class="ecommerce-search-product-input" [value]="searchText" (input)="updateSearchText($event)">-->
     <button [ngClass]="{'btn': true,'btn-search':searchText,'btn-search-disabled': !searchText}" [disabled]="!searchText">Search</button>
 </div>
