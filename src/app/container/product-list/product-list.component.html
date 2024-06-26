@@ -28,8 +28,9 @@
       </div>
     </div> -->
     <div *ngFor="let prod of products">
-      <!--(code for tick filter)  *ngIf="selectedFilterRadioButton === 'all' || prod.is_in_inventory.toString() === selectedFilterRadioButton" -->
+      <div *ngIf="selectedFilterRadioButton === 'all' || prod.is_in_inventory.toString() === selectedFilterRadioButton">
       <app-product [product]="prod" *ngIf="searchText === '' || prod.name.toLowerCase().includes(searchText)"></app-product>
+    </div>
     </div>
     
 </div>
